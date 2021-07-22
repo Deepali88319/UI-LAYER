@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> $("document").ready(function() {
+        // alert($("#container").html());
+        // $("#create").click(function(){
+            // $("#container p:first").html("<p>Replaced and created this text</p>");
+       // })
+       $("#create_text").click(function(){
+           $("#container p:last").text("<p> Replaced and created this text</p>");
+       });
+
+       $("#create_variable").click(function(){
+           var newText = $('#container p:first');
+           $("#container p:last").html(newText);
+       });
+
+    });  </script>
+</head>
+<body>
+    <a id= "create" href ="#">Create</a>
+    <a id="create_text" href="#">Create Text</a>
+    <a id="create_variable" href="#">Create Text</a>
+    <div id="container">
+        <p> 1.i am blessed,i m grateful,i m best,i can do anything,everythng is so good to me just by almighty's grace</p>
+        <p>2. i am blessed,i m grateful,i m best,i can do anything,everythng is so good to me just by almighty's grace</p>
+        <p>3.i am blessed,i m grateful,i m best,i can do anything,everythng is so good to me just by almighty's grace</p> 
+        
+        </div>
+</body>
+</html>

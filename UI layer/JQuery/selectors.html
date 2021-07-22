@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+        $("document").ready(function() {
+           // $("h1").css("border", "2px solid blue");
+           $("h1:first").css("border", "2px solid green");
+           $("#heading-three").css("border", "2px solid blue");
+           $(".last-one").css("border", "2px solid red");
+        })
+
+    </script>
+</head>
+<body>
+    <h1> This is heading 1</h1>
+    <h1> This is heading 2</h1>
+    <h1 id= "heading-three"> This is heading 3</h1>
+    <h1 class = "last-one"> This is heading 4</h1>
+    
+</body>
+</html>

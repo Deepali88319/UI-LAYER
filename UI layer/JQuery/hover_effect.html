@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> $("document").ready(function() {
+        $(".paras").hover(highLightPara);
+
+        function highLightPara()
+        {
+            $(this).toggleClass("highlight"); //toggleclass is a function         //  this keyword will be ging to select that para only on which our mouse is hovering
+        }
+
+        
+    });  </script>
+    <style>
+        .highlight {
+            background: #000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"> 
+        <p class ="paras"> JAI GURU JI</p>
+        <p class = "paras">Thankyou so much for everything</p>
+        <p class = "paras "> i m blessed</p>
+        <p class ="paras "> i m grateful</p>
+    </div>
+</body>
+</html>

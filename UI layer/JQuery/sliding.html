@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> $("document").ready(function() {
+        $("#slide-up").click(function(){
+            $("#para").slideUp(4000,"linear");
+        });
+        $("#slide-down").click(function(){
+            $("#para").slideDown("fast","linear");
+        });
+        $("#toggleSlide").click(function(){
+            $("#para").slideToggle("fast", function(){
+                alert("done");
+            });
+        });
+    });  </script>
+</head>
+<body>
+    <a id= "slide-up" href ="#">Click here to slide up</a>
+    <a id= "slide-down" href ="#">Click here to slide down</a>
+    <a id= "toggleSlide" href ="#">Click here to toggle</a>
+
+<p id= "para">
+ Guru ji,thankyou so much for being so good to me.i dont even know how to thank you.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> $("document").ready(function() {
+       $("#add-class").click(function(){
+           $("p:first").addClass('color');
+       });
+
+       $("#remove-class").click(function(){
+           $("p:first").removeClass('color');
+       });
+
+       $("#toggle-class").click(function(){
+           $("p:first").css("font-size","+=10px");
+       });
+
+
+    });  </script>
+    <style>
+        .color{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="add-class"> Add class</a>
+    <a href="#" id="remove-class"> Remove class</a>
+    <a href="#" id="toggle-class"> Toggle class</a>
+   
+    <p>THIS IS FIRST PARAGRAPH</p>
+  <p>THIS IS SECOND PARAGRAPH</p>
+  <p>THIS IS THIRD PARAGRAPH</p>
+  <p>THIS IS FOURTH PARAGRAPH</p>
+  
+</body>
+</html>
